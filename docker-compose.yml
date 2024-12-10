@@ -10,7 +10,6 @@ services:
       - "8081:80" # Exponer el puerto 80 de nginx en el puerto 8080 de tu host
     networks:
       - app-network
-    restart: always  # Esta línea permite que el contenedor se reinicie automáticamente
 networks:
   app-network:
     driver: bridge
